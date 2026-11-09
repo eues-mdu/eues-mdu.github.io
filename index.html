@@ -371,7 +371,7 @@ footer{background:var(--navy-d);color:rgba(255,255,255,.8);padding:48px 0 32px;f
 
     <div class="all-dl">
       <p>Потрібен увесь курс одразу? Завантажте всі 15 тем одним архівом.</p>
-      <a class="btn btn-navy" href="files/EUES_vsi_temy_PDF.zip" download>
+      <a class="btn btn-navy" href="EUES_vsi_temy_PDF.zip" download>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         Усі теми · ZIP (PDF, 18 МБ)</a>
     </div>
@@ -512,7 +512,7 @@ $("#topics").innerHTML = TOPICS.map(t => `
     <details><summary>План лекції</summary><ol>${t.plan.map(p=>`<li>${esc(p)}</li>`).join("")}</ol></details>
     <div class="actions">
       <a class="btn btn-navy" href="files/tema-${pad(t.n)}.pdf" target="_blank" rel="noopener" aria-label="Переглянути тему ${t.n} у PDF">${icoEye} PDF</a>
-      <a class="btn btn-line" href="files/tema-${pad(t.n)}.pptx" download="EUES_Тема_${t.n}.pptx" aria-label="Завантажити тему ${t.n} у PPTX">${icoDl} PPTX</a>
+      <a class="btn btn-line" href="tema-${pad(t.n)}.pptx" download="EUES_Тема_${t.n}.pptx" aria-label="Завантажити тему ${t.n} у PPTX">${icoDl} PPTX</a>
     </div>
     <a class="fb-link" href="#feedback" data-topic="${t.n}">${icoMsg} Залишити відгук про тему</a>
   </article>`).join("");
